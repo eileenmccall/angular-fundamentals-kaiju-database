@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { KaijuListComponent } from './kaiju-list/kaiju-list.component';
+import { KaijuComponent } from './kaiju/kaiju.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    KaijuListComponent
+    KaijuListComponent,
+    KaijuComponent
   ],
   imports: [
     BrowserModule
