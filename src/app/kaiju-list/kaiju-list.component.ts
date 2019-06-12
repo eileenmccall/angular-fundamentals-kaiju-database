@@ -8,6 +8,28 @@ import { Component, OnInit, OnDestroy, OnChanges } from '@angular/core';
 export class KaijuListComponent implements OnInit, OnChanges, OnDestroy {
   constructor() {}
 
+  kaiju = [
+    {
+      name: 'Godzilla',
+      temperment: 'good',
+      location: 'Japan'
+    },
+    {
+      name: 'Mothra',
+      temperment: 'good',
+      location: 'China'
+    },
+    {
+      name: 'Rodan',
+      temperment: 'Mexico'
+    },
+    {
+      name: 'Ghidorah',
+      temperment: 'evil',
+      location: 'Antarctica'
+    }
+  ];
+
   ngOnInit() {
     console.log('onInit fired!');
   }
