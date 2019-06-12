@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy, OnChanges } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-kaiju-list',
@@ -7,6 +8,12 @@ import { Component, OnInit, OnDestroy, OnChanges } from '@angular/core';
 })
 export class KaijuListComponent implements OnInit, OnChanges, OnDestroy {
   constructor() {}
+
+  form = new FormGroup({
+    name: new FormControl(''),
+    location: new FormControl(''),
+    temperment: new FormControl('')
+  });
 
   kaiju = [
     {
