@@ -1,4 +1,13 @@
-<div class="kaiju">
-  <h3>{{ kaiju.name }}</h3>
-  <p><strong>Location:</strong> {{ kaiju.location }}</p>
+<div
+  class="kaiju"
+  [ngClass]="{
+    good: kaiju.temperment === 'good',
+    evil: kaiju.temperment === 'evil'
+  }"
+>
+  <div class="info">
+    <h3>{{ kaiju.name }}</h3>
+    <p><strong>Location:</strong> {{ kaiju.location }}</p>
+  </div>
+  <button class="btn btn-danger">Delete</button>
 </div>
