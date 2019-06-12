@@ -35,6 +35,10 @@ export class KaijuListComponent implements OnInit, OnChanges, OnDestroy {
     }
   ];
 
+  onDelete(id: number): void {
+    this.kaiju = this.kaiju.filter(x => x.id !== id);
+  }
+
   ngOnInit() {
     console.log('onInit fired!');
   }
