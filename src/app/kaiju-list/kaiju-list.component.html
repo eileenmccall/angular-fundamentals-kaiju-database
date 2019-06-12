@@ -1,3 +1,43 @@
+<form class="form" [formGroup]="form">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input class="form-control" type="text" id="name" formControlName="name" />
+  </div>
+  <div class="form-group">
+    <label for="location">Location:</label>
+    <input
+      class="form-control"
+      type="text"
+      id="location"
+      formControlName="location"
+    />
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      formControlName="temperment"
+      type="radio"
+      id="goodTemperment"
+      value="good"
+    />
+    <label class="form-check-label" for="goodTemperment">
+      Good
+    </label>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      formControlName="temperment"
+      type="radio"
+      id="evilTemperment"
+      value="evil"
+    />
+    <label class="form-check-label" for="evilTemperment">
+      Evil
+    </label>
+  </div>
+</form>
+
 <p *ngIf="kaiju.length === 0">There are no kaiju to display</p>
 <app-kaiju
   *ngFor="let kaiju of kaiju"
