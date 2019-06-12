@@ -21,7 +21,8 @@ export class KaijuListComponent implements OnInit, OnChanges, OnDestroy {
     },
     {
       name: 'Rodan',
-      temperment: 'Mexico'
+      temperment: 'evil',
+      location: 'Mexico'
     },
     {
       name: 'Ghidorah',
