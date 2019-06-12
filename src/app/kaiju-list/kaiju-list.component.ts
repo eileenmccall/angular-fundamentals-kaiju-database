@@ -15,6 +15,8 @@ export class KaijuListComponent implements OnInit, OnChanges, OnDestroy {
     temperment: new FormControl('')
   });
 
+  onAdd() {}
+
   kaiju = [
     {
       id: 1,
