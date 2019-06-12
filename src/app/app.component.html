@@ -1,4 +1,7 @@
 <div class="container py-5">
   <app-header></app-header>
-  <app-kaiju-list></app-kaiju-list>
+  <app-kaiju-list *ngIf="showKaijuList"></app-kaiju-list>
+  <button class="btn btn-primary" (click)="showKaijuList = !showKaijuList">
+    Show/Hide Kaiju List
+  </button>
 </div>
