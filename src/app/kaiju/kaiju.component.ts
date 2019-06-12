@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-kaiju',
@@ -9,6 +9,7 @@ export class KaijuComponent implements OnInit {
   constructor() {}
 
   @Input() kaiju: any;
+  @Output() delete = new EventEmitter();
 
   ngOnInit() {}
 }
