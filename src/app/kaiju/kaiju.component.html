@@ -9,5 +9,5 @@
     <h3>{{ kaiju.name }}</h3>
     <p><strong>Location:</strong> {{ kaiju.location }}</p>
   </div>
-  <button class="btn btn-danger" (click)="delete.emit()">Delete</button>
+  <button class="btn btn-danger" (click)="delete.emit(kaiju.id)">Delete</button>
 </div>
