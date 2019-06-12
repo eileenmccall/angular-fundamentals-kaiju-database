@@ -9,7 +9,7 @@ export class KaijuComponent implements OnInit {
   constructor() {}
 
   @Input() kaiju: any;
-  @Output() delete = new EventEmitter<number>();
+  @Output() delete = new EventEmitter<string>();
 
   ngOnInit() {}
 }
