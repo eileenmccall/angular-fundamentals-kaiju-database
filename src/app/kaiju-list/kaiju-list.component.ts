@@ -10,21 +10,25 @@ export class KaijuListComponent implements OnInit, OnChanges, OnDestroy {
 
   kaiju = [
     {
+      id: 1,
       name: 'Godzilla',
       temperment: 'good',
       location: 'Japan'
     },
     {
+      id: 2,
       name: 'Mothra',
       temperment: 'good',
       location: 'China'
     },
     {
+      id: 3,
       name: 'Rodan',
       temperment: 'evil',
       location: 'Mexico'
     },
     {
+      id: 4,
       name: 'Ghidorah',
       temperment: 'evil',
       location: 'Antarctica'
