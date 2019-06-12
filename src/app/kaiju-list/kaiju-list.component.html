@@ -1,2 +1,2 @@
 <p *ngIf="kaiju.length === 0">There are no kaiju to display</p>
-<app-kaiju *ngFor="let kaiju of kaiju"></app-kaiju>
+<app-kaiju *ngFor="let kaiju of kaiju" [kaiju]="kaiju"></app-kaiju>

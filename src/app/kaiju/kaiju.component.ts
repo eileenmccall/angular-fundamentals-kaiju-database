@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-kaiju',
@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./kaiju.component.css']
 })
 export class KaijuComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  @Input() kaiju: any;
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
