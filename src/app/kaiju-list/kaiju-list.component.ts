@@ -15,37 +15,37 @@ export class KaijuListComponent implements OnInit, OnChanges, OnDestroy {
     temperment: new FormControl('')
   });
 
-  onAdd() {}
-
   kaiju = [
     {
-      id: 1,
       name: 'Godzilla',
       temperment: 'good',
       location: 'Japan'
     },
     {
-      id: 2,
       name: 'Mothra',
       temperment: 'good',
       location: 'China'
     },
     {
-      id: 3,
       name: 'Rodan',
       temperment: 'evil',
       location: 'Mexico'
     },
     {
-      id: 4,
       name: 'Ghidorah',
       temperment: 'evil',
       location: 'Antarctica'
     }
   ];
 
-  onDelete(id: number): void {
-    this.kaiju = this.kaiju.filter(x => x.id !== id);
+  onAdd() {
+    const kaijuToAdd = this.form.value;
+    this.kaiju.unshift(kaijuToAdd);
+    this.form.reset();
+  }
+
+  onDelete(name: string): void {
+    this.kaiju = this.kaiju.filter(x => x.name !== name);
   }
 
   ngOnInit() {
